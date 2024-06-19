@@ -1,0 +1,7 @@
+{
+  "name": "ionic-accordion-group-toggle",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
