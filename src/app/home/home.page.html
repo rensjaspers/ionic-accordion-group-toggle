@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <ion-button (click)="toggler.toggle()" class="ion-margin"
+    >Toggle all</ion-button
+  >
+  <ion-accordion-group
+    appAccordionGroupToggle
+    #toggler="appAccordionGroupToggle"
+  >
+    <ion-accordion>
+      <ion-item slot="header">
+        <ion-label>First Accordion</ion-label>
+      </ion-item>
+      <div slot="content">😎</div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header">
+        <ion-label>Second Accordion</ion-label>
+      </ion-item>
+      <div slot="content">🤩</div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header">
+        <ion-label>Third Accordion</ion-label>
+      </ion-item>
+      <div slot="content">💪</div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>
